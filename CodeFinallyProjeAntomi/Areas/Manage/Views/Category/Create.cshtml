@@ -1,0 +1,59 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Create";
+    List<Category> categories = ViewBag.Categories;
+    SelectList selectListItems = new SelectList(categories, nameof(Category.Id), nameof(Category.Name));
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="
+                                                                        position: absolute;
+                                                                        right: 72px;
+                                                                        top: 6rem;
+                                                                    ">
+    <h3>Category Create</h3>
+</div>
+
+<div class="row align-items-center">
+    <div class="container">
+        <div class="createform" style="
+                                        margin-left: 170px;
+                                        margin-top: 14rem;
+                                        background-color: white;
+                                        border-radius: 12px;
+                                        margin-bottom: 10rem;
+                                    ">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-check" style="margin-left: 15px;">
+                    <input asp-for="IsMain" class="form-check-input" >
+                    <label asp-for="IsMain" class="form-check-label"></label>
+                    <span asp-validation-for="IsMain" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name" style="margin-left:20px"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group imgContainer">
+                    <label asp-for="File" style="margin-left:20px"></label>
+                    <input asp-for="File" accept="image/*" style="margin-left:20px" class="form-control-file" placeholder="Enter Image">
+                    <span asp-validation-for="File" class="text-danger"></span>
+                </div>
+                <div class="form-group parentContainer">
+                    <label asp-for="ParentId"></label>
+                    <select asp-for="ParentId" class="form-control" asp-items="selectListItems">
+                        <option value="">Select Category</option>
+                    </select>
+                    <span asp-validation-for="ParentId" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary " style="margin-left:12px;margin-bottom:12px;width:140px">Submit</button>
+                <br />
+
+                <a asp-area="manage" asp-controller="Category" asp-action="Index" class="btn btn-primary" style="
+                                                                                                                margin-left: 11px;
+                                                                                                                width: 145px;
+                                                                                                                margin-bottom: 6px;
+                                                                                                            ">Go Back</a>
+            </form>
+        </div>
+    </div>
+</div>

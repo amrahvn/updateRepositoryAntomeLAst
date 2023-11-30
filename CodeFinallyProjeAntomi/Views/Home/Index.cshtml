@@ -1,0 +1,410 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--Slider Section Start-->
+<section>
+    <div class="containerr">
+        <div class="Slider-common d-flex justify-content-between w-auto ">
+            <div class="Slider1">
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            @foreach (Slider slider in Model.sliders)
+                            {
+                              <div class="carousel-item active" id="s1">
+                                <div class="slidertex">
+                                    <h3>@Html.Raw(slider.Title)</h3>
+                                        <h1>@Html.Raw(slider.MainTitle)</h1>
+                                        <p>@Html.Raw(slider.SubTitle)</p>
+                                    <a href="">@slider.Link</a>
+                                </div>
+                                <img class="d-block w-100" src="~/Assets/Photos/Slider/@slider.Image" alt="First slide">
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slidertext4 d-flex align-items-center justify-content-between">
+
+                    @foreach (Slider slider1 in Model.sliders)
+                    {
+                        <div class="text-child1 active" id="s1">
+                            <p>@Html.Raw(slider1.Description)</p>
+                        </div>   
+                    }
+
+                </div>
+
+            </div>
+            <div class="Slider2 ">
+                <div class="Slider-cartcom  d-flex align-items-center justify-content-between">
+                    <div class="card-slider">
+                        <a href="">
+                            <img src="~/Assets/Photos/HomePhotos/banner1.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-slider">
+                        <a href="">
+                            <img src="~/Assets/Photos/HomePhotos/banner2.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-slider">
+                        <a href="">
+                            <img src="~/Assets/Photos/HomePhotos/banner3.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Slider Section End-->
+<!--Delivery-Section Start-->
+<section>
+    <div class="containerr">
+        <div class="delivery-common row">
+            <div class="delivery  col-lg-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="delivery-img">
+                        <img src="~/Assets/Photos/Delivery/shipping1.webp" alt="">
+                    </div>
+                    <div class="delivery-text">
+                        <h4>Free Delivery</h4>
+                        <p>For all oders over $120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery  col-lg-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="delivery-img">
+                        <img src="~/Assets/Photos/Delivery/shipping1.webp" alt="">
+                    </div>
+                    <div class="delivery-text">
+                        <h4>Free Delivery</h4>
+                        <p>For all oders over $120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery  col-lg-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="delivery-img">
+                        <img src="~/Assets/Photos/Delivery/shipping1.webp" alt="">
+                    </div>
+                    <div class="delivery-text">
+                        <h4>Free Delivery</h4>
+                        <p>For all oders over $120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery  col-lg-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="delivery-img">
+                        <img src="~/Assets/Photos/Delivery/shipping1.webp" alt="">
+                    </div>
+                    <div class="delivery-text">
+                        <h4>Free Delivery</h4>
+                        <p>For all oders over $120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery  col-lg-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="delivery-img">
+                        <img src="~/Assets/Photos/Delivery/shipping1.webp" alt="">
+                    </div>
+                    <div class="delivery-text">
+                        <h4>Free Delivery</h4>
+                        <p>For all oders over $120</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--Delivery-Section End-->
+<!--Home Category-cart Start-->
+<div class="category-homeBg">
+    <div class="containerr">
+        <div class="categories_product_inner row d-flex justify-content-between align-items-center">
+            @foreach (Category category in Model.categories)
+            {
+              <div class="single_categories_product d-flex align-items-center justify-content-start col-lg-14">
+                <div class="categories_product_content">
+                    <a href="">@category.Name</a>
+                    <p>@category.Products.Count() Products</p>
+                </div>
+                <div class="categories_product_thumb">
+                        <img style="height: 130px;margin-left: 10px" src="~/Assets/Photos/Category/@category.Image" alt="">
+                </div>
+            </div>  
+            }
+        </div>
+    </div>
+</div>
+<!--Home Category-cart End-->
+<!--Product Deals of the month start-->
+<div class="Product-Deals">
+    <div class="containerr">
+        <div class="product_header d-flex justify-content-between align-items-center">
+            <div class="section_title">
+                <h2>Deals Of The Month</h2>
+            </div>
+            <div class="product_tab_btn">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li>
+                        <a class="active" href="">
+                            Fashion & Clothing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Games & Consoles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Headphone & Speaker
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Mobile & Tablets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu1">
+            <div class="row ">
+                <div class="menu--wrapper">
+                    @foreach (Product product in Model.products)
+                    {
+                        @* DateTime createdAt = product.CreatedAt; // Produktun yarandığı tarixi əldə et
+                        DateTime targetDate = createdAt.AddMonths(1);*@
+
+                        <div class="single-product">
+                        <figure>
+                            <div class="product_thumb">
+                                    <a class="Main-image" asp-controller="Detail" asp-action="Index" asp-route-id="@product.Id">
+                                        <img  src="~/Assets/Photos/Product/Main-image/@product.MainImage" alt="">
+                                </a>
+                                    <a class="Hover-image" asp-controller="Detail" asp-action="Index" asp-route-id="@product.Id">
+                                        <img  src="~/Assets/Photos/Product/Hover-image/@product.HoverImage" alt="">
+                                </a>
+                                <div class="label_product">
+                                    <span>Sale</span>
+                                </div>
+                                <div class="action_links">
+                                    <ul class="d-flex justify-content-center align-items-center">
+                                        <li>
+                                                <a class="wishBtn" asp-controller="wish" asp-action="AddWish" asp-route-id="@product.Id" data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true" data-tippy="Add to Wishlist">
+                                                <i class="arrow fa-solid fa-caret-up fa-rotate-180 fa-xl"></i>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="orta">
+                                                <a asp-controller="Detail" asp-action="Index" asp-route-id="@product.Id" data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true" data-tippy="Add to Compare">
+                                                <i class="arrow fa-solid fa-caret-up fa-rotate-180 fa-xl"></i>
+                                                <i class="fa-solid fa-list"></i>
+                                                </a>
+                                        </li>
+                                         <li>
+                                                <a  data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true" data-tippy="quick view">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                <i class="arrow fa-solid fa-caret-up fa-rotate-180 fa-xl"></i>
+                                               </a>
+                                          </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content">
+                                <div class="product_content_inner">
+                                    <h4>
+                                        <a href="">
+                                            @product.Title
+                                        </a>
+                                    </h4>
+                                    <div class="price_box">
+                                        <span class="old_price">$@product.Price</span>
+                                        <span class="current_price">$@(product.Price- product.DisCountPrice)</span>
+                                    </div>
+                                    <div class="countdown_text">
+                                        <p>
+                                            <span>Hurry Up!</span>
+                                            Offers ends in:
+                                        </p>
+                                    </div>
+                                        <div class="product_timing" data-target-date="2023/12/25">
+                                            <div class="countdown_area d-flex align-items-center justify-content-between">
+                                                <div class="single_countdown">
+                                                    <div class="countdown_number days"></div>
+                                                    <div class="countdown_title">DAYS</div>
+                                                </div>
+                                                <div class="single_countdown">
+                                                    <div class="countdown_number hours"></div>
+                                                    <div class="countdown_title">HOUR</div>
+                                                </div>
+                                                <div class="single_countdown">
+                                                    <div class="countdown_number minutes"></div>
+                                                    <div class="countdown_title">MINUTES</div>
+                                                </div>
+                                                <div class="single_countdown">
+                                                    <div class="countdown_number seconds"></div>
+                                                    <div class="countdown_title">SECOND</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="add-cart">
+                                    <a class="addBasket" asp-controller="Basket" asp-action="AddBasket" asp-route-id="@product.Id">Add To cart</a>
+                            </div>
+                        </figure>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Product Deals of the month End-->
+<!--Home 2-image start-->
+<div class="banner_area">
+    <div class="containerr">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <figure class="single_banner">
+                    <div class="banner_thumb">
+                        <a href="">
+                            <img src="~/Assets/Photos/Banner/banner4.webp" alt="">
+                        </a>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <figure class="single_banner">
+                    <div class="banner_thumb">
+                        <a href="">
+                            <img src="~/Assets/Photos/Banner/banner5.webp" alt="">
+                        </a>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Home 2-image End-->
+<!--Product Section Start-->
+<section>
+    <div class="product-area">
+        <div class="containerr">
+
+            <div class="product-button">
+                <ul class="d-flex justify-content-center align-items-center">
+                    <li data-target="1"><a class="active" href="">New Arrival</a></li>
+                    <li data-target="2"><a href="">Bestseller</a></li>
+                    <li data-target="3"><a href="">Featured</a></li>
+                </ul>
+            </div>
+
+            <div class="product-common " data-id="1">
+                <div class="row">
+                    <div class="d-flex justify-content-between align-items-center row g-1">
+                        @await Html.PartialAsync("_ProductListPArtial",Model.NewArrival)
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-common d-none" data-id="2">
+                <div class="row">
+                    <div class="d-flex justify-content-between align-items-center row g-1">
+                        @await Html.PartialAsync("_ProductListPArtial",Model.BestSeller)
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-common d-none" data-id="3">
+                <div class="row">
+                    <div class="d-flex justify-content-between align-items-center row g-1">
+                        @await Html.PartialAsync("_ProductListPArtial",Model.Featured)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--Product Section End-->
+<!--Banner_area2 Start-->
+<div class="banner_area2">
+    <div class="containerr">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-3 col-md-3">
+                <div class="banner_thumb">
+                    <a href="">
+                        <img src="~/Assets/Photos/Banner/altsol.webp" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="banner_thumbo">
+                    <a href="">
+                        <img src="~/Assets/Photos/Banner/altorta.webp" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="banner_thumbs">
+                    <a href="">
+                        <img src="~/Assets/Photos/Banner/altsag.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Banner_area2 End-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var productTimings = document.querySelectorAll('.product_timing');
+
+        function updateCountdown(targetDate, countdownElements) {
+            var now = new Date().getTime();
+            var distance = targetDate - now;
+
+            if (distance <= 0) {
+                clearInterval(intervalId);
+                countdownElements.forEach(element => {
+                    element.innerText = "Sona çatdı";
+                });
+            } else {
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElements[0].innerText = days;
+                countdownElements[1].innerText = hours;
+                countdownElements[2].innerText = minutes;
+                countdownElements[3].innerText = seconds;
+            }
+        }
+
+        productTimings.forEach(function (productTiming) {
+            var targetDate = new Date(productTiming.dataset.targetDate).getTime();
+            var countdownElements = productTiming.querySelectorAll('.countdown_number');
+
+            function update() {
+                updateCountdown(targetDate, countdownElements);
+            }
+
+            update();
+            var intervalId = setInterval(update, 1000);
+        });
+    });
+</script>

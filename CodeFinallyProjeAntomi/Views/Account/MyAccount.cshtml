@@ -1,0 +1,231 @@
+﻿@model MyAccountVM
+@{
+    ViewData["Title"] = "MyAccount";
+
+    bool isAddress = TempData["Tab"]?.ToString() == "Address";
+    bool isOrder = TempData["Tab"]?.ToString() == "Order";
+    bool isAccount = TempData["Tab"]?.ToString() == "Account";
+    bool isDashboard = TempData["Tab"]?.ToString() == null;
+    bool addressErrorr = TempData["addreess"]?.ToString() == "true";
+    bool editadressErrorr = TempData["editadress"]?.ToString() == "true";
+
+}}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Assets/css/style.css">
+    <link rel="stylesheet" href="~/Assets/css/reset.css">
+
+    <!-- Tippy.js CSS dosyası -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tippy.js@6.3.1/dist/tippy.css">
+
+    <!-- Font Awesome CSS dosyası -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+  
+    <!--Bread-crubs area Part Start-->
+    <div class="breadcrumbs_area">
+        <div class="containerr">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li>
+                                <a href="İndex.html">Home</a>
+                            </li>
+                            <li><i class="fa-solid fa-chevron-down fa-rotate-270"></i></li>
+                            <li>My Account</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bread-crubs area Part Start-->
+    <!--My account Start-->
+    <div class="account_page_bg">
+        <div class="containerr">
+            <section class="main_content_area">
+                <div class="account_dashboard">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="dashboard_tab_button">
+                                <ul role="tablist" class="nav flex-column dashboard-list">
+                                    <li>
+                                        <a href="#dashboard" data-bs-toggle="tab" class="nav-link @(isDashboard ? " active":"")" aria-selected="@(isDashboard ? true:false)" role="tab">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#orders" data-bs-toggle="tab" class="nav-link @(isOrder ? "active":"")" aria-selected="@(isOrder ? true:false)" tabindex="-1" role="tab">Orders</a>
+                                    </li>
+                                    <li>
+                                        <a href="#address" data-bs-toggle="tab" class="nav-link @(isAddress ? "active":"")" aria-selected="@(isAddress ? true:false)" tabindex="-1" role="tab">Addresses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#account-details" data-bs-toggle="tab" class="nav-link @(isAccount ? "active":"")" aria-selected="@(isAccount ? true:false)" tabindex="-1" role="tab">Account details</a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Account" asp-action="LogOut" class="nav-link" aria-selected="false" tabindex="-1" role="tab">logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-9 col-lg-9">
+                            <div class="tab-content dashboard_content">
+                                <div class="tab-pane fade show  @(isDashboard?"show active":"")" id="dashboard" role="tabpanel">
+                                    <h3>Dashboard </h3>
+                                    <p>
+                                        From your account dashboard. you can easily check &amp;
+                                        view your <a href="#">recent orders</a>, manage your <a href="#">shipping and billing addresses</a> and
+                                        <a href="#">Edit your password and account details.</a>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade @(isOrder?"show active":"")" id="orders" role="tabpanel">
+                                    <h3>Orders</h3>
+                                    <div class="table-responsive">
+                                        <table class="fold-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>No</th>
+                                                    <th>Amount</th>
+                                                    <th>Value</th>
+                                                    <th>Status</th>
+                                                    <th>Comment</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                               @foreach (Order order in Model.Orders.OrderByDescending(x=>x.Id))
+                                                {
+                                                    <tr class="view">
+                                                        <td>@order.No</td>
+                                                        <td class="pcs">@order.OrderProducts.Sum(o=>o.Count)</td>
+                                                        <td class="cur">@order.OrderProducts.Sum(o=>(o.Price+o.ExTag)*o.Count)</td>
+                                                        <td>@order.Status</td>
+                                                        <td>@order.Comment</td>
+
+                                                    </tr>
+                                                    <tr class="fold">
+                                                        <td colspan="7">
+                                                            <div class="fold-content">
+                                                                <h3>Company Name</h3>
+                                                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                                                <table class="small-friendly">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Title</th>
+                                                                            <th>Price</th>
+                                                                            <th>Extag</th>
+                                                                            <th>Count</th>
+                                                                            <th>Total</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                      @foreach (OrderProduct orderProduct in order.OrderProducts)
+                                                                        {
+                                                                            <tr>
+                                                                                <td>@orderProduct.Title</td>
+                                                                                <td>@orderProduct.Price</td>
+                                                                                <td>@orderProduct.ExTag</td>
+                                                                                <td>@orderProduct.Count</td>
+                                                                                <td>@((orderProduct.Price+orderProduct.ExTag)*orderProduct.Count)</td>
+                                                                            </tr>
+                                                                        }
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane @(isAddress?"show active":"")" id="address" role="tabpanel">
+
+                                    <p>The following addresses will be used on the checkout page by default.</p>
+                                    <h4 class="billing-address">Billing address</h4>
+                                    <a href="#" class="view addAdressBtn @(addressErrorr || editadressErrorr ? "d-none":"")" style="border-radius:8px;padding: 6px 12px;background-color: black;color:white;font-weight: 600;">Add Adress</a>
+                                    
+                                    
+                                    <div class="addAdress d-none">
+                                            <h3>Account details </h3>
+                                            <div class="login">
+                                                <div class="login_form_container">
+                                                   <div class="account_login_form  @*@(addressErrorr ? "":"d-none")*@">
+                                                       @await Html.PartialAsync("_AddAdresssPArtial",Model.Address)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    
+                                        <div class="login">
+                                            <div class="login_form_container">
+                                                <div class="editAdress d-none account_login_form">
+                                                @if (editadressErrorr)
+                                                {
+                                                  @await Html.PartialAsync("_editAdressPArtial",Model.Address)
+                                                }
+                                                </div>
+                                            </div>
+                                        </div>
+                                 
+
+                                    <div class="adressDiv d-flex align-items-center justify-content-start" style="margin-top: 20px;">
+                                        
+                                            @foreach (Address address in Model.Addresses.OrderByDescending(a=>a.IsDefault))
+                                            {
+                                            <div style="margin-right: 40px;">
+                                                <p>
+                                                    <strong>
+                                                        @address.CompanyName
+                                                        @if (address.IsDefault)
+                                                        {
+                                                            <span class="badge badge-success" style="background-color: #0e8303;">Main</span>
+                                                        }
+                                                    </strong>
+                                                </p>
+                                                   
+                                                <address>
+                                                    <span><strong>City:</strong>@address.County</span>,
+                                                        <br>
+                                                        <span><strong>State:</strong>@address.State</span>,
+                                                        <br>
+                                                        <span><strong>ZIP:</strong> @address.PostalCode</span>,
+                                                        <br>
+                                                        <span><strong>Street:</strong>@address.Street</span>
+                                                    </address>
+                                                    <a asp-controller="Account" asp-action="EditAdress" asp-route-id="@address.Id" class="view editAdressBtn" style="border-radius:8px;padding: 6px 12px;background-color: black;color:white;font-weight: 600;">Edit Address</a>
+                                                </div>
+                                            }
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade  @(isAccount?"show active":"")" id="account-details" role="tabpanel">
+                                    @await Html.PartialAsync("_MyAccountPartial",Model.profileAccountVM)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--My Account End-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="glider.js"></script>
+
+    <script src="~/Assets/Js/app.js"></script>
+    <script src="/Assets/Js/account.js"></script>
+</body>
+</html>

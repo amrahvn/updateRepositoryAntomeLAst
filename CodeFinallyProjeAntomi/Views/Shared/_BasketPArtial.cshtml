@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BasketVMs>
+
+<div class="cart_close">
+    <div class="cart_text">
+        <h3>cart</h3>
+    </div>
+    <div class="mini_cart_close">
+        <a id="closeBtn" class="close" href="">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+    </div>
+</div>
+ 
+@foreach (BasketVMs basketVMs in Model)
+{
+    <div class="cart_item d-flex align-items-center justify-content-between">
+        <div class="cart_img">
+            <a href="">
+                <img src="~/Assets/Photos/Product/Main-image/@basketVMs.Image" alt="">
+            </a>
+        </div>
+        <div class="cart_info">
+            <a href="">@basketVMs.Title</a>
+            <p>
+                Qty: @basketVMs.Count X
+                <span> $@basketVMs.Price </span>
+            </p>
+        </div>
+        <div class="cart_remove">
+            <a asp-controller="Basket" asp-action="Delete" asp-route-id="@basketVMs.Id">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+        </div>
+    </div>
+}
+
+<div class="mini_cart_table">
+    <div class="cart_total">
+        <span>Sub total:</span>
+        <span class="price">$@Model.Sum(m=>m.Count*m.Price)</span>
+    </div>
+    <div class="cart_total mt-10">
+        <span>total:</span>
+        <span class="price">$@Model.Sum(m=>m.Count*(m.Price+m.ExTag))</span>
+    </div>
+</div>
+
+<div class="mini_cart_footer">
+    <div class="cart_button">
+        <a asp-controller="Basket" asp-action="Index" >View cart</a>
+    </div>
+    @if (Model.Count() > 0)
+    {
+        <div class="cart_button">
+            <a class="check" asp-controller="Order" asp-action="CheckOut">Checkout</a>
+        </div>
+    }
+</div>

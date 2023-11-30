@@ -1,0 +1,136 @@
+﻿@model OrderVM
+
+@{
+    ViewData["Title"] = "CheckOut";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Assets/css/style.css">
+    <link rel="stylesheet" href="~/Assets/css/reset.css">
+
+    <!-- Tippy.js CSS dosyası -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tippy.js@6.3.1/dist/tippy.css">
+
+    <!-- Font Awesome CSS dosyası -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!--Bread-crubs area Part Start-->
+<div class="breadcrumbs_area">
+    <div class="containerr">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <ul>
+                        <li>
+                            <a href="İndex.html">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-chevron-down fa-rotate-270"></i></li>
+                        <li>Check out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Bread-crubs area Part Start-->
+<!--Check out start-->
+<div class="checkout_page_bg">
+    <div class="containerr">
+        <div class="Checkout_section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="user-actions">
+                        <h3>
+                            <i class="fa-solid fa-file" aria-hidden="true"></i>
+                            Returning customer?
+                            <a class="Returning collapsed" href="#checkout_coupon" data-bs-toggle="collapse" aria-expanded="false">Click here to enter your code</a>
+                        </h3>
+                        <div id="checkout_coupon" class="collapse" data-parent="#accordion">
+                            <div class="checkout_info coupon_info">
+                                <form action="#">
+                                    <input placeholder="Coupon code" type="text">
+                                    <button type="submit">Apply coupon</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout_form">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="checkout_form_left">
+                                @await Html.PartialAsync("_CheckOutPartial",Model.Order)
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="checkout_form_right">
+                            <form action="#">
+                                <h3>Your order</h3>
+                                <div class="order_table table-responsive">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                @foreach (BasketVMs basketVMs in Model.BasketVM)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            @basketVMs.Title
+                                                            <strong> × @basketVMs.Count</strong>
+                                                        </td>
+                                                        <td> $@((basketVMs.Price * basketVMs.Count).ToString("#.##"))</td>
+                                                    </tr>
+                                            }
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Cart Subtotal</th>
+                                                <td>$@Model.BasketVM.Sum(b=>(b.Price + b.ExTag)*b.Count).ToString("#.##")</td>
+                                            </tr>
+                                            <tr class="order_total">
+                                                <th>Order Total</th>
+                                                <td>
+                                                    <strong>$@Model.BasketVM.Sum(b=>(b.Price + b.ExTag)*b.Count).ToString("#.##")</strong>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="payment_method">
+                                        <button id="paypalBtn" form="Payment" type="submit">Proceed to PayPal</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Check out End-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="glider.js"></script>
+
+    <script src="~/Assets/Js/app.js"></script>
+    <script src="~/Assets/Js/check.js"></script>
+</body>
+</html>

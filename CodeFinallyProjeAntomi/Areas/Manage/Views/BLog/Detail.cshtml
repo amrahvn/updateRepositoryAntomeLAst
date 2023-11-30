@@ -1,0 +1,32 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="
+                                                                        position: absolute;
+                                                                        right: 72px;
+                                                                        top: 6rem;
+                                                                    ">
+    <h3>Blog Detail</h3>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="card" style="width: 18rem;margin-left: 271px;margin-top: 12rem;margin-bottom:40px">
+            <div class="card-body">
+                <h5 class="card-title">Title: @Model.Image</h5>
+                <h5 class="card-title">Title: @Model.Title</h5>
+                <h5 class="card-title">News1: @Model.news1</h5>
+                <h5 class="card-title">News2: @Model.news2</h5>
+                <h5 class="card-title">News3: @Model.news3</h5>
+                <h5 class="card-title">News4: @Model.news4</h5>
+            </div>
+        </div>
+        
+        <div style="margin-left: 137px;">
+            <a asp-area="manage" asp-controller="Blog" asp-action="Index" class="btn btn-primary">Go Back</a>
+        </div>
+    </div>
+</div>
+

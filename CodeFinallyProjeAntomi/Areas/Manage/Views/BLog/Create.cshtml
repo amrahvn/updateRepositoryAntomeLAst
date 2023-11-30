@@ -1,0 +1,100 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="
+                                                                        position: absolute;
+                                                                        right: 72px;
+                                                                        top: 6rem;
+                                                                    ">
+    <h3>Blog Create</h3>
+</div>
+
+<div class="row align-items-center">
+    <div class="container">
+        <div class="createform" style="
+                                        margin-left: 170px;
+                                        margin-top: 14rem;
+                                        background-color: white;
+                                        border-radius: 12px;
+                                        margin-bottom: 10rem;
+                                    ">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="Title"></label>
+                    <textarea asp-for="Title" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group ">
+                    <label asp-for="MainFile" style="margin-left:20px"></label>
+                    <input asp-for="MainFile" accept="image/*" style="margin-left:20px" class="form-control-file" placeholder="Enter Main image">
+                    <span asp-validation-for="MainFile" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="news1"></label>
+                    <textarea asp-for="news1" class="form-control" rows="3"></textarea>
+                </div>
+                 <div class="form-group">
+                    <label asp-for="news2"></label>
+                    <textarea asp-for="news2" class="form-control" rows="3"></textarea>
+                </div>
+                 <div class="form-group">
+                    <label asp-for="news3"></label>
+                    <textarea asp-for="news3" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label asp-for="news4"></label>
+                    <textarea asp-for="news4" class="form-control" rows="3"></textarea>
+                </div>
+@*                <div class="form-group ">
+                    <label asp-for="MainFile" style="margin-left:20px"></label>
+                    <input asp-for="MainFile" accept="image/*" style="margin-left:20px" class="form-control-file" placeholder="Enter Main image">
+                    <span asp-validation-for="MainFile" class="text-danger"></span>
+                </div>*@
+                <button type="submit" class="btn btn-primary" style="margin-left:12px;margin-bottom:12px;width:140px">Submit</button>
+                <br />
+
+                <a asp-area="manage" asp-controller="Blog" asp-action="Index" class="btn btn-primary" style="
+                                                                                                                margin-left: 11px;
+                                                                                                                width: 145px;
+                                                                                                                margin-bottom: 6px;
+                                                                                                            ">Go Back</a>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#Title'))
+            .catch(error => {
+                console.error(error);
+            }); 
+       ClassicEditor
+            .create(document.querySelector('#news1'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#news2'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#news3'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#news4'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+};
+
+

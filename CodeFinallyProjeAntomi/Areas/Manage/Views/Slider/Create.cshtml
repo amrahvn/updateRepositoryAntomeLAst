@@ -1,0 +1,65 @@
+﻿@model Slider
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="
+                                                                        position: absolute;
+                                                                        right: 72px;
+                                                                        top: 6rem;
+                                                                    ">
+    <h3>Slider Create</h3>
+</div>
+
+<div class="row align-items-center">
+    <div class="container">
+        <div class="createform" style="
+                                        margin-left: 170px;
+                                        margin-top: 14rem;
+                                        background-color: white;
+                                        border-radius: 12px;
+                                        margin-bottom: 10rem;
+                                    ">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="File" style="margin-left:20px"></label>
+                    <input asp-for="File" class="form-control">
+                    <span asp-validation-for="File" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title" style="margin-left:20px"></label>
+                    <input asp-for="Title" class="form-control" placeholder="Enter Title">
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MainTitle" style="margin-left:20px"></label>
+                    <input asp-for="MainTitle" class="form-control" placeholder="Enter Main Title">
+                    <span asp-validation-for="MainTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SubTitle" style="margin-left:20px"></label>
+                    <input asp-for="SubTitle" class="form-control" placeholder="Enter SubTitle">
+                    <span asp-validation-for="SubTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" style="margin-left:20px"></label>
+                    <input asp-for="Description" class="form-control" placeholder="Enter Description">
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Link" style="margin-left:20px"></label>
+                    <input asp-for="Link" class="form-control" placeholder="Enter Link">
+                    <span asp-validation-for="Link" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary " style="margin-left:12px;margin-bottom:12px;width:140px">Submit</button>
+                <br />
+
+                <a asp-area="manage" asp-controller="Slider" asp-action="Index" class="btn btn-primary" style="
+                                                                                                                margin-left: 11px;
+                                                                                                                width: 145px;
+                                                                                                                margin-bottom: 6px;
+                                                                                                            ">Go Back</a>
+            </form>
+        </div>
+    </div>
+</div>

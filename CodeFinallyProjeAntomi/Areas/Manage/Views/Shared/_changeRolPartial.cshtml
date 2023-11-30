@@ -1,0 +1,17 @@
+﻿
+@model PageNatedList<AppUser>
+
+@foreach (AppUser appUser in Model)
+{
+    <tr>
+        <td> @appUser.UserName</td>
+        <td>@appUser.Email</td>
+        <td>@string.Join(",",appUser.Roles.Select(x=>x))</td>
+        <td>
+            <a class="btn btn-danger" asp-area="manage" asp-controller="User" asp-action="Detail" asp-route-id="@appUser.Id">Detail</a>
+            <a class="ResetBtn btn btn-warning" asp-area="manage" asp-controller="User" asp-action="ResetPassword" asp-route-id="@appUser.Id">Reset Password</a>
+            <a class="btn btn-primary" asp-area="manage" asp-controller="Account" asp-action="ChangeRole" asp-route-id="@appUser.Id">Change Roll</a>
+            <a class="setActiveBtn btn btn-@(appUser.IsActive? "danger":"success")" asp-route-currentPage="@Model.CurrentPage" asp-area="manage" asp-controller="User" asp-action="SetActive" asp-route-id="@appUser.Id"> @(appUser.IsActive ? "DeActive" : "Active") </a>
+        </td>
+    </tr>
+}

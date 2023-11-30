@@ -1,0 +1,1417 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Js\\about.js",
+      "PackagePath": "staticwebassets\\Assets\\Js\\about.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Js\\account.js",
+      "PackagePath": "staticwebassets\\Assets\\Js\\account.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Js\\app.js",
+      "PackagePath": "staticwebassets\\Assets\\Js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Js\\check.js",
+      "PackagePath": "staticwebassets\\Assets\\Js\\check.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Js\\custome.js",
+      "PackagePath": "staticwebassets\\Assets\\Js\\custome.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Js\\detail.js",
+      "PackagePath": "staticwebassets\\Assets\\Js\\detail.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Js\\shop.js",
+      "PackagePath": "staticwebassets\\Assets\\Js\\shop.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\alt1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\alt1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\alt2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\alt2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\alt3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\alt3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\bacground.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\bacground.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\big1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\big1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\galerimg2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\galerimg2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\galeryimg1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\galeryimg1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\galeryimg3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\galeryimg3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\signature.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\signature.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\AbouUs\\testimola.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\AbouUs\\testimola.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Banner\\Shop16.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Banner\\Shop16.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Banner\\altorta.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Banner\\altorta.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Banner\\altsag.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Banner\\altsag.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Banner\\altsol.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Banner\\altsol.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Banner\\banner4.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Banner\\banner4.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Banner\\banner5.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Banner\\banner5.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\20231125044855435.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\20231125044855435.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\blog-big1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\blog-big1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\right.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\right.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\right1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\right1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\right2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\right2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\right3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\right3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\right4.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\right4.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Blog\\user.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Blog\\user.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\20231110235534606.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\20231110235534606.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\20231111154304136.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\20231111154304136.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\20231111154323167.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\20231111154323167.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\20231111154340080.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\20231111154340080.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\category10.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\category10.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\category2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\category2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\category3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\category3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\category4.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\category4.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\category6.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\category6.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\category8.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\category8.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Category\\category9.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Category\\category9.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Categorycategory5.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Categorycategory5.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Categoryproduct (1).webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Categoryproduct (1).webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Delivery\\shipping1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Delivery\\shipping1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Delivery\\shipping2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Delivery\\shipping2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Delivery\\shipping3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Delivery\\shipping3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Delivery\\shipping4.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Delivery\\shipping4.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Delivery\\shipping5.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Delivery\\shipping5.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Fouterimages\\icon-appstore.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Fouterimages\\icon-appstore.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Fouterimages\\icon-googleplay.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Fouterimages\\icon-googleplay.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Fouterimages\\icon-phone.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Fouterimages\\icon-phone.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\HomePhotos\\banner1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\HomePhotos\\banner1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\HomePhotos\\banner2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\HomePhotos\\banner2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\HomePhotos\\banner3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\HomePhotos\\banner3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Logo\\logo.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Logo\\logo.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\20231111043122277.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\20231111043122277.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\20231111043138064.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\20231111043138064.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\20231111043141914.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\20231111043141914.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\20231111043516269.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\20231111043516269.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\20231111043516275.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\20231111043516275.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\20231111043817476.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\20231111043817476.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\20231111043817480.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\20231111043817480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\20231111043817484.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\20231111043817484.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\20231111043208296.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\20231111043208296.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\20231111043516277.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\20231111043516277.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\20231111043817486.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\20231111043817486.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\20231111203058058.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\20231111203058058.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\20231122003840844.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\20231122003840844.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\cherar.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\cherar.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\kalonka.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\kalonka.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\kexe.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\kexe.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\product10.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\product10.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\product12.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\product12.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\product2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\product2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\product20.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\product20.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\product6.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\product6.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\product8.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\product8.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\saathover.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\saathover.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\saatwebp.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\saatwebp.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Hover-image\\suo.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Hover-image\\suo.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\20231111043223599.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\20231111043223599.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\20231111043516278.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\20231111043516278.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\20231111043817487.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\20231111043817487.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\20231111203058065.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\20231111203058065.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\20231122003840844.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\20231122003840844.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\chear27.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\chear27.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\iphone14.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\iphone14.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\kalonka15.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\kalonka15.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\lapma.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\lapma.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\product1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\product1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\product11.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\product11.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\product13.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\product13.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\product5.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\product5.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\product7.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\product7.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\product9.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\product9.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\saat.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\saat.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\saatmai.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\saatmai.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\stol.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\stol.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\Main-image\\xeke.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\Main-image\\xeke.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231111162539991.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231111162539991.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231111203058066.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231111203058066.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231111203058067.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231111203058067.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231111203058068.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231111203058068.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231111203058069.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231111203058069.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231111203058070.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231111203058070.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231111203058071.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231111203058071.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231122003840837.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231122003840837.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231122003840842.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231122003840842.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Product\\ProductImages\\20231122003840843.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Product\\ProductImages\\20231122003840843.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Slider\\20231112000740542.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Slider\\20231112000740542.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Slider\\slider1.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Slider\\slider1.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Slider\\slider2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Slider\\slider2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Slider\\slider3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Slider\\slider3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Slider\\slider4.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Slider\\slider4.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\Wish\\product.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\Wish\\product.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\cart\\product (1).webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\cart\\product (1).webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\cart\\product2.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\cart\\product2.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\Photos\\cart\\product3.webp",
+      "PackagePath": "staticwebassets\\Assets\\Photos\\cart\\product3.webp"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\css\\Custome.css",
+      "PackagePath": "staticwebassets\\Assets\\css\\Custome.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\css\\detail.css",
+      "PackagePath": "staticwebassets\\Assets\\css\\detail.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\css\\reset.css",
+      "PackagePath": "staticwebassets\\Assets\\css\\reset.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\Assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\Assets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Assets\\css\\style.scss",
+      "PackagePath": "staticwebassets\\Assets\\css\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Template\\Email.html",
+      "PackagePath": "staticwebassets\\Template\\Email.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\Template\\ResetPassword.html",
+      "PackagePath": "staticwebassets\\Template\\ResetPassword.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\manage\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\dark.css",
+      "PackagePath": "staticwebassets\\manage\\css\\dark.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\developer.css",
+      "PackagePath": "staticwebassets\\manage\\css\\developer.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\dripicons.css",
+      "PackagePath": "staticwebassets\\manage\\css\\dripicons.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\flatpickr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\manage\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\line-awesome.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\line-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\manage\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\manage\\css\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\remixicon.css",
+      "PackagePath": "staticwebassets\\manage\\css\\remixicon.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\manage\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\select2-bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\select2-bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\slick-theme.css",
+      "PackagePath": "staticwebassets\\manage\\css\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\slick.css",
+      "PackagePath": "staticwebassets\\manage\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\spacer.css",
+      "PackagePath": "staticwebassets\\manage\\css\\spacer.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\style.css",
+      "PackagePath": "staticwebassets\\manage\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\typography.css",
+      "PackagePath": "staticwebassets\\manage\\css\\typography.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\css\\variable.css",
+      "PackagePath": "staticwebassets\\manage\\css\\variable.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\AvenirLTStd-Black.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\AvenirLTStd-Black.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\AvenirLTStd-Book.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\AvenirLTStd-Book.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\AvenirLTStd-Roman.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\AvenirLTStd-Roman.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\Now-Bold.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\Now-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\Now-Bold.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\Now-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\Now-Regular.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\Now-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\Now-Regular.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\Now-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\dripicons-v2.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\dripicons-v2.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\dripicons-v2.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\dripicons-v2.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\dripicons-v2.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\dripicons-v2.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\dripicons-v2.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\dripicons-v2.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-brands-400.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-brands-400.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-brands-400.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-brands-400.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-brands-400.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-regular-400.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-regular-400.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-regular-400.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-regular-400.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-regular-400.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-solid-900.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-solid-900.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-solid-900.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-solid-900.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\la-solid-900.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\la-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\remixicon.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\remixicon.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\remixicon.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\remixicon.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\remixicon.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\remixicon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\remixicon.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\remixicon.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\remixicon.woff2",
+      "PackagePath": "staticwebassets\\manage\\fonts\\remixicon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\manage\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\manage\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\manage\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\manage\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\dashboard\\01.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\dashboard\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\dashboard\\02.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\dashboard\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\dashboard\\03.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\dashboard\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\dashboard\\04.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\dashboard\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\dashboard\\05.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\dashboard\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\dashboard\\06.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\dashboard\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\error\\02.png",
+      "PackagePath": "staticwebassets\\manage\\images\\error\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\error\\404.png",
+      "PackagePath": "staticwebassets\\manage\\images\\error\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\error\\500.png",
+      "PackagePath": "staticwebassets\\manage\\images\\error\\500.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\manage\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\loader.gif",
+      "PackagePath": "staticwebassets\\manage\\images\\loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\login\\login.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\login\\login.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\login\\mail.png",
+      "PackagePath": "staticwebassets\\manage\\images\\login\\mail.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\logo-full.png",
+      "PackagePath": "staticwebassets\\manage\\images\\logo-full.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\logo.png",
+      "PackagePath": "staticwebassets\\manage\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\01.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\02.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\03.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\04.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\05.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\06.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\07.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\08.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\09.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\movie-thumb\\10.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\movie-thumb\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\01.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\02.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\03.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\07.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\08.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\09.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\10.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\100.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\100.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\11.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\12.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\13.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\14.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\15.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\16.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\17.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\18.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\19.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\20.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\21.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\22.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\23.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\24.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\25.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\26.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\27.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\28.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\42.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\42.png",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\42.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\43.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\43.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\44.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\44.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\45.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\46.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\46.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\47.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\48.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\48.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\49.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\49.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\a1.png",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\a1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\a2.png",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\a2.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\a3.png",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\a3.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\a4.png",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\a4.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\img-success.png",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\img-success.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\man.svg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\man.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\p1.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\p2.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\page-load-loader.gif",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\page-load-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\profile-bg.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\profile-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\profile-bg.png",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\profile-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\tag_blue.svg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\tag_blue.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\page-img\\tag_red.svg",
+      "PackagePath": "staticwebassets\\manage\\images\\page-img\\tag_red.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\01.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\02.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\03.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\04.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\04_.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\04_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\05.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\06.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\07.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\08.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\09.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\show-thumb\\10.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\show-thumb\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\04.svg",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\04.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\05.svg",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\05.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\data.json",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\data.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\data1.json",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\data1.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\data2.json",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\data2.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\img-1.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\jpg.svg",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\jpg.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\match-code.json",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\match-code.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\xml.svg",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\xml.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\small\\zip.svg",
+      "PackagePath": "staticwebassets\\manage\\images\\small\\zip.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\01.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\02.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\03.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\04.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\05.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\06.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\07.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\08.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\09.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\1.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\10.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\11.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\11.png",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\uder-5.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\uder-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\user-1.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\user-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\user-2.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\user-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\user-3.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\user-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\user-4.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\user-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\user-5.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\user-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\user-6.jpg",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\user-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\images\\user\\user.png",
+      "PackagePath": "staticwebassets\\manage\\images\\user\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\CustomAdmin.js",
+      "PackagePath": "staticwebassets\\manage\\js\\CustomAdmin.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\apexcharts.js",
+      "PackagePath": "staticwebassets\\manage\\js\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\chart-custom.js",
+      "PackagePath": "staticwebassets\\manage\\js\\chart-custom.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\countdown.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\countdown.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\custom.js",
+      "PackagePath": "staticwebassets\\manage\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\flatpickr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\jquery.appear.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.appear.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\smooth-scrollbar.js",
+      "PackagePath": "staticwebassets\\manage\\js\\smooth-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVA\\Desktop\\AmrahLAstAntomi\\CodeFinallyProjeAntomi\\wwwroot\\manage\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\manage\\js\\wow.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CodeFinallyProjeAntomi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.CodeFinallyProjeAntomi.props",
+      "PackagePath": "build\\CodeFinallyProjeAntomi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CodeFinallyProjeAntomi.props",
+      "PackagePath": "buildMultiTargeting\\CodeFinallyProjeAntomi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.CodeFinallyProjeAntomi.props",
+      "PackagePath": "buildTransitive\\CodeFinallyProjeAntomi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

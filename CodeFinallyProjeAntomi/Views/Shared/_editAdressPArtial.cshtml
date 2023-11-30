@@ -1,0 +1,57 @@
+﻿@model Address
+
+<form method="post" asp-controller="Account" asp-action="EditAdress" style="margin-bottom: 20px;">
+    <div class="col-lg-6">
+        <label asp-for="CompanyName">Company Name</label>
+        <input asp-for="CompanyName">
+        <span asp-validation-for="CompanyName"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="County">Countr Name</label>
+        <input asp-for="County">
+        <span asp-validation-for="County"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="Street">Stret Name</label>
+        <input asp-for="Street">
+        <span asp-validation-for="Street"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="Street2">Street Name</label>
+        <input asp-for="Street2">
+        <span asp-validation-for="Street2"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="Town">Town Name</label>
+        <input asp-for="Town">
+        <span asp-validation-for="Town"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="State">State Name</label>
+        <input asp-for="State">
+        <span asp-validation-for="State"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="PostalCode">Postal Code</label>
+        <input asp-for="PostalCode">
+        <span asp-validation-for="PostalCode"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="Phone">Phone Name</label>
+        <input asp-for="Phone">
+        <span asp-validation-for="Phone"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="OrderNotes">Phone Name</label>
+        <input asp-for="OrderNotes">
+        <span asp-validation-for="OrderNotes"></span>
+    </div>
+    <div class="col-lg-6">
+        <label asp-for="IsDefault">
+            <input id="checkbox" asp-for="IsDefault" style="height: 16px;margin-left: -16px;">
+            Default
+        </label>
+    </div>
+    <button type="submit" style="width: 50%;height: 39px;background-color: black;color: white;">Save Change</button>
+</form>
+<a href="#" class="view goBack " style="border-radius:8px;padding: 6px 224px;background-color: black;color:white;font-weight: 600;">Go Back</a>

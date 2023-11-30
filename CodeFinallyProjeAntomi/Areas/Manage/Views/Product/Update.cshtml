@@ -1,0 +1,147 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Update";
+    IEnumerable<Category> categories = ViewBag.Categories;
+    SelectList selectListItems = new SelectList(categories, nameof(Category.Id), nameof(Category.Name));
+    IEnumerable<Brand> brands = ViewBag.Brands;
+    SelectList selectListBrand = new SelectList(brands, nameof(Brand.Id), nameof(Brand.Name));
+    IEnumerable<Tag> tags = ViewBag.Tags;
+    SelectList selectListTag = new SelectList(tags, nameof(Tag.Id), nameof(Tag.Name));
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="
+                                                                        position: absolute;
+                                                                        right: 72px;
+                                                                        top: 6rem;
+                                                                    ">
+    <h3>Product Create</h3>
+</div>
+
+<div class="row align-items-center">
+    <div class="container">
+        <div class="createform" style="
+                                        margin-left: 170px;
+                                        margin-top: 14rem;
+                                        background-color: white;
+                                        border-radius: 12px;
+                                        margin-bottom: 10rem;
+                                    ">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="Title" style="margin-left:20px"></label>
+                    <input asp-for="Title" class="form-control" placeholder="Enter Title">
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price" style="margin-left:20px"></label>
+                    <input asp-for="Price" class="form-control" placeholder="Enter Price">
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DisCountPrice" style="margin-left:20px"></label>
+                    <input asp-for="DisCountPrice" class="form-control" placeholder="Enter DisCountPrice">
+                    <span asp-validation-for="DisCountPrice" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ExTag" style="margin-left:20px"></label>
+                    <input asp-for="ExTag" class="form-control" placeholder="Enter ExTag">
+                    <span asp-validation-for="ExTag" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Count" style="margin-left:20px"></label>
+                    <input asp-for="Count" class="form-control" placeholder="Enter Count">
+                    <span asp-validation-for="Count" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SmallDescription" style="margin-left:20px"></label>
+                    <input asp-for="SmallDescription" class="form-control" placeholder="Enter SmallDescription">
+                    <span asp-validation-for="SmallDescription" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description"></label>
+                    <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="arrival d-flex justify-content-lg-start align-items-center">
+                    <div class="form-group">
+                        <label asp-for="NewArrival" style="margin-left:20px;"></label>
+                        <input asp-for="NewArrival" class="form-control toggle-checkbox" data-toggle-target="new-arrival" style="height:20px">
+                        <span asp-validation-for="NewArrival" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="margin-right: 34rem;">
+                        <label asp-for="BestSeller" style="margin-left:20px ;"></label>
+                        <input asp-for="BestSeller" class="form-control toggle-checkbox" data-toggle-target="best-seller" style="height:20px">
+                        <span asp-validation-for="BestSeller" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="margin-left: -34rem;">
+                        <label asp-for="Featured" style="margin-left:20px;"></label>
+                        <input asp-for="Featured" class="form-control toggle-checkbox" data-toggle-target="featured" style="height:20px">
+                        <span asp-validation-for="Featured" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label asp-for="MainFile" style="margin-left:20px"></label>
+                    <input asp-for="MainFile" accept="image/*" style="margin-left:20px" class="form-control-file" placeholder="Enter Main image">
+                    <span asp-validation-for="MainFile" class="text-danger"></span>
+                </div>
+                <div>
+                    <img style="width:100px;" src="~/Assets/Photos/Product/Main-image/@Model.MainImage"/>
+                </div>
+                <div class="form-group ">
+                    <label asp-for="HoverFile" style="margin-left:20px"></label>
+                    <input asp-for="HoverFile" accept="image/*" style="margin-left:20px" class="form-control-file" placeholder="Enter Hover">
+                    <span asp-validation-for="HoverFile" class="text-danger"></span>
+                </div>
+                <div>
+                    <img style="width:100px;" src="~/Assets/Photos/Product/Hover-image/@Model.HoverImage" />
+                </div>
+                <div class="form-group ">
+                    <label asp-for="Files" style="margin-left:20px"></label>
+                    <input asp-for="Files" accept="image/*" style="margin-left:20px" class="form-control-file" placeholder="Enter Files">
+                    <span asp-validation-for="Files" class="text-danger"></span>
+                </div>
+                <div class="filesContainer d-flex align-items-center justify-content-start mr-5">
+                    @await Html.PartialAsync("_DeleteImagePartial",Model.productImages); 
+                </div>
+                <div class="form-group ">
+                    <label asp-for="CategoryId"></label>
+                    <select asp-for="CategoryId" class="form-control" asp-items="selectListItems">
+                        <option value="">Select Category</option>
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BrandId"></label>
+                    <select asp-for="BrandId" class="form-control" asp-items="selectListBrand">
+                        <option value="">Select Brand</option>
+                    </select>
+                    <span asp-validation-for="BrandId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TagId1"></label>
+                    <select asp-for="TagId1" class="form-control" asp-items="selectListTag">
+                        <option value="">Select Tag</option>
+                    </select>
+                    <span asp-validation-for="TagId1" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-left:12px;margin-bottom:12px;width:140px">Submit</button>
+                <br />
+
+                <a asp-area="manage" asp-controller="Product" asp-action="Index" class="btn btn-primary" style="
+                                                                                                                margin-left: 11px;
+                                                                                                                width: 145px;
+                                                                                                                margin-bottom: 6px;
+                                                                                                            ">Go Back</a>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#Description'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+};
+

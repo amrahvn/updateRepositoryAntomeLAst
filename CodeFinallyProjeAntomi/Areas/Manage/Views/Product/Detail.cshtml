@@ -1,0 +1,40 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="
+                                                                        position: absolute;
+                                                                        right: 72px;
+                                                                        top: 6rem;
+                                                                    ">
+    <h3>Product Detail</h3>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="card" style="width: 18rem;margin-left: 140px;margin-top: 12rem;margin-bottom:-65px">
+
+            <img class="card-img-top" style="width:120px;" src="~/Assets/Photos/Product/Main-image/@Model.MainImage" alt="Card image cap">
+            <img class="card-img-top" style="width:120px;margin-top:10px" src="~/Assets/Photos/Product/Hover-image/@Model.HoverImage" alt="Card image cap">
+            <div class="card-body">
+
+                <h5 class="card-title">@Model.Title</h5> 
+                <h5 class="card-title">Price :@Model.Price</h5>
+                <h5 class="card-title">Disocunt Price :@Model.DisCountPrice</h5>
+                <h5 class="card-title">Extag :@Model.ExTag</h5>
+                <h5 class="card-title">Small Description :@Model.SmallDescription</h5>
+                <h5 class="card-title">Description :@Model.Description</h5>
+                <h5 class="card-title">Seria :@Model.Seria</h5>
+                <h5 class="card-title">Number :@Model.Number</h5>
+                <h5 class="card-title">Category :@Model.Category.Name</h5>
+                <h5 class="card-title">Brand :@Model.Brand.Name</h5>
+            </div>
+        </div>
+
+        <div style="margin-left: 142px;margin-top: 86px;">
+            <a asp-area="manage" asp-controller="Product" asp-action="Index" class="btn btn-primary">Go Back</a>
+        </div>
+    </div>
+</div>

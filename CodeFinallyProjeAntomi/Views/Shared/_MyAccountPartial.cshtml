@@ -1,0 +1,73 @@
+﻿@model ProfileAccountVM
+
+<form method="post" asp-controller="Account" asp-action="MyProfileAccount">
+       <h3>Account details </h3>
+      <div class="login">
+    <div class="login_form_container">
+        <div class="account_login_form">
+                <p>Already have an account? <a href="#">Log in instead!</a></p>
+                <div class="input-radio">
+                    <span  class="custom-radio"><input  type="radio" value="1" name="id_gender"> Mr.</span>
+                    <span class="custom-radio"><input type="radio" value="1" name="id_gender"> Mrs.</span>
+                </div> <br>
+                <br>
+              @*  <div asp-validation-summary="ModelOnly" class="text-danger">
+
+                </div>*@
+                <div>
+                    <label asp-for="Name">First Name</label>
+                    <input asp-for="Name">
+                    <span asp-validation-for="Name"></span>
+                </div>
+                <div>
+                    <label asp-for="SurName">Last Name</label>
+                    <input asp-for="SurName">
+                    <span asp-validation-for="SurName"></span>
+                </div> 
+                <div>
+                    <label asp-for="UserName">UserName</label>
+                    <input asp-for="UserName">
+                    <span asp-validation-for="UserName"></span>
+                </div>
+                <div>
+                    <label asp-for="Email">Email</label>
+                    <input asp-for="Email">
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div>
+                    <label asp-for="CurrentPassword"></label>
+                    <input asp-for="CurrentPassword">
+                    <span asp-validation-for="CurrentPassword"></span>
+                </div>
+                <div>
+                    <label asp-for="NewPassword"></label>
+                    <input asp-for="NewPassword">
+                    <span asp-validation-for="NewPassword"></span>
+                </div>
+                <div>
+                    <label asp-for="ConfiremPassword"></label>
+                    <input asp-for="ConfiremPassword">
+                    <span asp-validation-for="ConfiremPassword"></span>
+                </div>
+                <label>Birthdate</label>
+                <input type="text" placeholder="MM/DD/YYYY" value="" name="birthday">
+                <span class="example">
+                    (E.g.: 05/31/1970)
+                </span>
+                <br>
+                <span class="custom_checkbox">
+                    <input type="checkbox" value="1" name="optin">
+                    <label>Receive offers from our partners</label>
+                </span>
+                <br>
+                <span class="custom_checkbox1">
+                    <input type="checkbox" value="1" name="newsletter">
+                    <label>Sign up for our newsletter<br><em>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</em></label>
+                </span>
+                <div class="save_button primary_btn default_button">
+                    <button type="submit">Save</button>
+                </div>
+        </div>
+    </div>
+</div>
+   </form>

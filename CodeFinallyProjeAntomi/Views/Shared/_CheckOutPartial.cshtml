@@ -1,0 +1,96 @@
+﻿@model Order
+<form method="post" id="Payment">
+    <h3>Billing Details</h3>
+    <div class="row">
+        <div class="col-lg-6 mb-20">
+            <label asp-for="Name">
+                First Name
+                <span>*</span>
+            </label>
+            <input asp-for="Name">
+        </div>
+        <div class="col-lg-6 mb-20">
+            <label asp-for="Surnama">
+                Last Name
+                <span>*</span>
+            </label>
+            <input asp-for="Surnama">
+        </div>
+        <div class="col-12 mb-20">
+            <label asp-for="CompanyName">Company Name</label>
+            <input asp-for="CompanyName">
+        </div>
+        <div class="col-12 mb-20">
+            <label asp-for="County">County Name2</label>
+            <input asp-for="County">
+        </div>
+    @*    <div class="col-12 mb-20">
+            <label >country </label>
+            <span>*</span>
+            <br>
+            <select class="niceselect_option" name="cuntry" id="country">
+                <option value="1">Azerbaijan</option>
+                <option value="2">bangladesh</option>
+                <option value="3">Algeria</option>
+                <option value="4">Afghanistan</option>
+                <option value="5">Ghana</option>
+                <option value="6">Albania</option>
+                <option value="7">Bahrain</option>
+                <option value="8">Colombia</option>
+                <option value="9">Dominican Republic</option>
+            </select>
+        </div>*@
+        <div class="col-12 mb-20">
+            <label asp-for="Street">
+                Street address
+                <span>*</span>
+            </label>
+            <input placeholder="House number and street name" asp-for="Street">
+        </div>
+        <div class="col-12 mb-20">
+            <input placeholder="Apartment, suite, unit etc. (optional)" asp-for="Street2" >
+        </div>
+        <div class="col-12 mb-20">
+            <label asp-for="Town">
+                Town / City
+                <span>*</span>
+            </label>
+            <input asp-for="Town">
+        </div>
+        <div class="col-12 mb-20">
+            <label asp-for="State">
+                State / County
+                <span>*</span>
+            </label>
+            <input asp-for="State">
+        </div>
+        <div class="col-12 mb-20">
+            <label asp-for="PostalCode">
+                 Postal/Code
+                <span>*</span>
+            </label>
+            <input asp-for="PostalCode">
+        </div>
+        <div class="col-lg-6 mb-20">
+            <label asp-for="Phone">
+                Phone
+                <span>*</span>
+            </label>
+            <input asp-for="Phone">
+        </div>
+        <div class="col-lg-6 mb-20">
+            <label asp-for="Email">
+                Email Address
+                <span>*</span>
+            </label>
+            <input asp-for="Email">
+        </div>
+        <div class="col-12">
+            <div class="order-notes">
+                <label @*for="order_note"*@ asp-for="OrderNotes">Order Notes</label>
+                <br>
+                <textarea asp-for="OrderNotes" id="order_note" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+            </div>
+        </div>
+    </div>
+</form>

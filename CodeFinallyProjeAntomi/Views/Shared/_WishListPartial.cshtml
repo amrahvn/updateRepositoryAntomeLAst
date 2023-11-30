@@ -1,0 +1,64 @@
+﻿@model IList<WishVM>
+
+
+@if (ViewData["WishList"] != null && ((List<WishVM>)ViewData["WishList"]).Any())
+{
+<form action="#" >
+    <div class="row">
+        <div class="col-12">
+            <div class="table_desc wishlist">
+                <div class="cart_page table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="product_remove">Delete</th>
+                                <th class="product_thumb">Image</th>
+                                <th class="product_name">Product</th>
+                                <th class="product-price">Price</th>
+                                <th class="product_quantity">Stock Status</th>
+                                <th class="product_total">Add To Cart</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (WishVM wishVM in ViewData["WishList"] as List<WishVM>)
+                             {
+                                    <tr>
+                                        <td class="product_remove">
+                                        <a asp-controller="Wish" asp-action="Delete" asp-route-id="@wishVM.Id">X</a>
+                                        </td>
+                                        <td class="product_thumb">
+                                            <a href="">
+                                            <img src="~/Assets/Photos/Product/Main-image/@wishVM.Image" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product_name">
+                                            <a href="">@wishVM.Title</a>
+                                        </td>
+                                        <td class="product-price">
+                                            £@wishVM.Price
+                                        </td>
+                                        <td class="product_quantity">
+                                            @if(wishVM.Count>0){
+                                                <p>In Stock</p>
+                                            }
+                                            @if(wishVM.Count<=0){
+                                                <p>Bitmisdir</p>
+                                            }
+                                        </td>
+                                        <td class="product_total">
+                                            <a class="addBasket" asp-controller="Basket" asp-action="AddBasket" asp-route-id="@wishVM.Id">Add To Cart</a>
+                                        </td>
+                                    </tr>
+                             }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+}
+else
+{
+    <div class="d-none">Form is hidden because there are no products in the WishList</div>
+}

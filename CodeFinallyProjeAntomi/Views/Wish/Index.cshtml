@@ -1,0 +1,75 @@
+﻿@model Wish
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--Bread-crubs area Part Start-->
+<div class="breadcrumbs_area">
+    <div class="containerr">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <ul>
+                        <li>
+                            <a href="İndex.html">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-chevron-down fa-rotate-270"></i></li>
+                        <li>Wish List</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Bread-crubs area Part Start-->
+<!--Wish list Start-->
+<div class="wishlist_page_bg">
+
+    @if (ViewData["WishList"] != null && ((List<WishVM>)ViewData["WishList"]).Any())
+   {
+    <div class="containerr">
+        <div class="wishlist_area">
+            <div class="wishlist_inner">
+                @await Html.PartialAsync("_WishListPartial",Model)
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="wishlist_share">
+                        <h4>Share on:</h4>
+                        <ul class="d-flex align-items-center justify-content-center">
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-rss"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-vuejs"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-turkish-lira-sign"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+
+</div>
+<!--Wish list End-->
+

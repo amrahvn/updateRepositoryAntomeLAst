@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Product>
+
+@foreach (Product product1 in Model)
+{
+    <div class="col-lg-14">
+        <div class="single-product2">
+            <figure>
+                <div class="product_thumb">
+                    <a class="Main-image" href="">
+                        <img src="~/Assets/Photos/Product/Main-image/@product1.MainImage" alt="">
+                    </a>
+                    <a class="Hover-image" href="">
+                        <img src="~/Assets/Photos/Product/Hover-image/@product1.HoverImage" alt="">
+                    </a>
+                    <div class="label_product">
+                        <span>Sale</span>
+                    </div>
+                    <div class="action_links">
+                        <ul class="d-flex justify-content-center align-items-center">
+                            <li class="lired">
+                                <a class="wishBtn" asp-controller="Wish" asp-action="AddWish" asp-route-id="@product1.Id" data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true" data-tippy="Add to Wishlist">
+                                    <i class="arrow fa-solid fa-caret-up fa-rotate-180 fa-xl"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </li>
+                            <li class="orta">
+                                <a class="modalBtn" asp-controller="Detail" asp-action="Index" asp-route-id="@product1.Id" data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true" data-tippy="Add to Compare">
+                                    <i class="arrow fa-solid fa-caret-up fa-rotate-180 fa-xl"></i>
+                                    <i class="fa-solid fa-list"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true" data-tippy="quick view">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <i class="arrow fa-solid fa-caret-up fa-rotate-180 fa-xl"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_content">
+                    <div class="product_content_inner">
+                        <h4>
+                            <a href="">
+                                @product1.Title
+                            </a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="old_price">$@product1.Price</span>
+                            <span class="current_price">$@(product1.Price - product1.DisCountPrice)</span>
+                        </div>
+                        <div class="countdown_text">
+                            <p>
+                                <span>Hurry Up!</span>
+                                Offers ends in:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-cart">
+                    <a class="addBasket" asp-controller="Basket" asp-action="AddBasket" asp-route-id="@product1.Id" >Add To cart</a>
+                </div>
+            </figure>
+        </div>
+    </div>
+}

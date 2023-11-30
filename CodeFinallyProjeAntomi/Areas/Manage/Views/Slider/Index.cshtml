@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Slider>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h3>Slider</h3>
+    <a asp-area="manage" asp-controller="Slider" asp-action="Create" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="position: absolute;
+    right: 72px;
+    top: 6rem;">
+        <i class="fas fa-download fa-smile-o text-white-50"></i> Create
+    </a>
+</div>
+
+<div class="row">
+    <div class="container">
+
+
+        <table class="table table-striped table-dark" style="
+    margin-left: 138px;
+    margin-top: 8rem;
+">
+
+            <thead>
+
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Main Title</th>
+                    <th scope="col">Sub Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Link</th>
+                    <th scope="col">Create date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Slider slider in Model)
+                {
+                    <tr>
+                        <td>
+                            <img style="width:100px;" src="~/Assets/Photos/Slider/@slider.Image">
+                        </td>
+                        <td>@slider.Title</td>
+                        <td>@slider.MainTitle</td>
+                        <td>@slider.SubTitle</td>
+                        <td>@slider.Description</td>
+                        <td>@slider.Link</td>
+                        <td>Date:@slider.CreatedAt.ToString("yyyy/MM/dd")</td>
+                        <td>
+                            <a class="btn btn-warning" asp-area="manage" asp-controller="Slider" asp-action="Update" asp-route-id="@slider.Id">Update</a>
+                            <a class="btn btn-primary" asp-area="manage" asp-controller="Slider" asp-action="Delete" asp-route-id="@slider.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+</div>
+

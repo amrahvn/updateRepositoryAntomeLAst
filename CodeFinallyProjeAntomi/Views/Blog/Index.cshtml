@@ -1,0 +1,437 @@
+﻿@model CommentBLogVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--Bread-crubs area Part Start-->
+<div class="breadcrumbs_area">
+    <div class="containerr">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <ul>
+                        <li>
+                            <a href="İndex.html">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-chevron-down fa-rotate-270"></i></li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Bread-crubs area Part Start-->
+<!--BLog body area Start-->
+<div class="blog_bg_area">
+    <div class="containerr">
+        <div class="blog_page_section">
+            <div class="row">
+
+                <div class="col-lg-9 col-md-12">
+                    <!--Blog Grid Area Start-->
+                    <div class="blog_wrapper blog_details">
+                       
+                         <article class="single_blog">
+                            @foreach (var blog2 in Model.Blogs)
+                            {
+                              <figure>
+                                <div class="post_header">
+                                    <h3 class="post_title">@Html.Raw(blog2.Title)</h3>
+                                    <div class="blog_meta">
+                                        <span class="author">
+                                            Posted by :
+                                            <a href="">@blog2.CreatedBy</a>
+                                            /
+                                        </span>
+                                        <span class="meta_date">
+                                            On :
+                                                <a href=""> @blog2.CreatedAt.ToString("MMMM dd, yyyy HH:mm:ss")</a>
+                                            /
+                                        </span>
+                                        <span class="post_category">
+                                            In :
+                                            <a href="">Company, Image, Travel</a>
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="blog_thumb">
+                                    <img src="~/Assets/Photos/Blog/@blog2.Image" alt="">
+                                </div>
+                                <figcaption class="blog_content">
+                                    <div class="post_content">
+                                            <p>@Html.Raw(blog2.news1)</p>
+                                        <blockquote>
+                                                <p>@Html.Raw(blog2.news2)</p>
+                                        </blockquote>
+                                            <p>@Html.Raw(blog2.news3)</p>
+                                            <p>@Html.Raw(blog2.news4)</p>
+                                    </div>
+                                    <div class="entry_content">
+                                        <div class="post_meta">
+                                            <span>Tags: </span>
+                                            <span><a href="">fashion</a></span>
+                                            <span>
+                                                <a href="">, t-shirt</a>
+                                            </span>
+                                            <span>
+                                                <a href="">, white</a>
+                                            </span>
+                                        </div>
+                                        <div class="social_sharing">
+                                            <p>share this post:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-brands fa-facebook"></i>
+                                                    </a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-brands fa-square-x-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-brands fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-brands fa-google-plus-g"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa-brands fa-google-plus-g"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            }
+                         </article>
+                        
+
+                        <div class="related_posts">
+                            <h3>Related posts</h3>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <article class="single_related">
+                                        <figure>
+                                            <div class="related_thumb">
+                                                <img src="~/Assets/Photos/Blog/1.webp" alt="">
+                                            </div>
+                                            <figcaption class="related_content">
+                                                <h4>
+                                                    <a href="">Post with Gallery</a>
+                                                </h4>
+                                                <div class="blog_meta">
+                                                    <span class="author">
+                                                        By :
+                                                        <a href="">admin</a>
+                                                    </span>
+                                                    <span class="meta_date">
+                                                        April 11, 2022
+                                                    </span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <article class="single_related">
+                                        <figure>
+                                            <div class="related_thumb">
+                                                <img src="~/Assets/Photos/Blog/2.webp" alt="">
+                                            </div>
+                                            <figcaption class="related_content">
+                                                <h4>
+                                                    <a href="">Post with Gallery</a>
+                                                </h4>
+                                                <div class="blog_meta">
+                                                    <span class="author">
+                                                        By :
+                                                        <a href="">admin</a>
+                                                    </span>
+                                                    <span class="meta_date">
+                                                        April 11, 2022
+                                                    </span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <article class="single_related">
+                                        <figure>
+                                            <div class="related_thumb">
+                                                <img src="~/Assets/Photos/Blog/3.webp" alt="">
+                                            </div>
+                                            <figcaption class="related_content">
+                                                <h4>
+                                                    <a href="">Post with Gallery</a>
+                                                </h4>
+                                                <div class="blog_meta">
+                                                    <span class="author">
+                                                        By :
+                                                        <a href="">admin</a>
+                                                    </span>
+                                                    <span class="meta_date">
+                                                        April 11, 2022
+                                                    </span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comments_box">
+                            <h3>@Model.Comments.Count() Comments </h3>
+
+                            @if (User.IsInRole("SuperAdmin"))
+                            {
+                                @foreach (var item in Model.Comments)
+                                {
+                                    <div class="comment_list">
+                                        <div class="comment_thumb">
+                                            <img src="~/Assets/Photos/Blog/user.webp" alt="">
+                                        </div>
+                                        <div class="comment_content">
+                                            <div class="comment_meta">
+                                                <h5>
+                                                    <a href="">@User.Identity.Name</a>
+                                                </h5>
+                                                <span>@item.CommentTime.ToString("MMMM dd, yyyy HH:mm:ss")</span>
+                                                <p>@item.CommentText</p>
+                                            </div>
+                                            <div class="comment_reply">
+                                                <a href="">Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+
+
+                            @foreach (var item in Model.Comments)
+                            {
+                                <div class="comment_list list_two">
+                                    <div class="comment_thumb">
+                                        <img src="~/Assets/Photos/Blog/user.webp" alt="">
+                                    </div>
+                                    <div class="comment_content">
+                                        <div class="comment_meta">
+                                            <h5>
+                                                <a href="">@User.Identity.Name</a>
+                                            </h5>
+                                            <span>@item.CommentTime.ToString("MMMM dd, yyyy HH:mm:ss")</span>
+                                            <p>@item.CommentText</p>
+                                        </div>
+                                        <div class="comment_reply">
+                                            <a href="">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                           
+                        </div>
+
+                        <div class="comments_form">
+                            <h3>Leave a Reply </h3>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+
+                            @await Html.PartialAsync("_CommentPartial", new CodeFinallyProjeAntomi.Models.Comment())
+
+                        </div>
+                    </div> 
+                    <!--blog are end-->
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <div class="blog_sidebar_widget">
+                        <div class="widget_list widget_search">
+                            <div class="widget_title">
+                                <h3>Search</h3>
+                                <form action="#">
+                                    <input type="text" placeholder="Search...">
+                                    <button type="submit">search</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="widget_list comments">
+                            <div class="widget_title">
+                                <h3>Recent Comments</h3>
+                            </div>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Blog/right.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="post_info">
+                                    <span>
+                                        <a href="">demo</a>
+                                        says:
+                                    </span>
+                                    <a href="">Quisque semper nunc</a>
+                                </div>
+                            </div>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Blog/right.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="post_info">
+                                    <span>
+                                        <a href="">admin</a>
+                                        says:
+                                    </span>
+                                    <a href="">Quisque semper nunc</a>
+                                </div>
+                            </div>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Blog/right.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="post_info">
+                                    <span>
+                                        <a href="">demo</a>
+                                        says:
+                                    </span>
+                                    <a href="">Quisque semper nunc</a>
+                                </div>
+                            </div>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Blog/right.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="post_info">
+                                    <span>
+                                        <a href="">admin</a>
+                                        says:
+                                    </span>
+                                    <a href="">Quisque semper nunc</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget_list widget_post2">
+                            <div class="widget_title">
+                                <h3>Recent Posts</h3>
+                            </div>
+                            <div class="post_wrapper2">
+                                <div class="post_thumb">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Blog/right1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="post_info">
+                                    <h4>
+                                        <a href="">Blog image post</a>
+                                    </h4>
+                                    <span>March 16, 2022 </span>
+                                </div>
+                            </div>
+                            <div class="post_wrapper2">
+                                <div class="post_thumb">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Blog/right2.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="post_info">
+                                    <h4>
+                                        <a href="">Post with Gallery</a>
+                                    </h4>
+                                    <span>March 16, 2022 </span>
+                                </div>
+                            </div>
+                            <div class="post_wrapper2">
+                                <div class="post_thumb">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Blog/right3.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="post_info">
+                                    <h4>
+                                        <a href="">Post with Audio</a>
+                                    </h4>
+                                    <span>March 16, 2022 </span>
+                                </div>
+                            </div>
+                            <div class="post_wrapper2">
+                                <div class="post_thumb">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Blog/right4.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="post_info">
+                                    <h4>
+                                        <a href="">Post with Video</a>
+                                    </h4>
+                                    <span>March 16, 2022 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget_list widget_categories">
+                            <div class="widget_title">
+                                <h3>Categories</h3>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="">Audio</a>
+                                </li>
+                                <li>
+                                    <a href="">Company</a>
+                                </li>
+                                <li>
+                                    <a href="">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="">Image</a>
+                                </li>
+                                <li>
+                                    <a href="">Other</a>
+                                </li>
+                                <li>
+                                    <a href="">Travel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget_list widget_tag">
+                            <div class="widget_title">
+                                <h3>Tag products</h3>
+                            </div>
+                            <div class="tag_widget">
+                                <ul>
+                                    <li>
+                                        <a href="">asian</a>
+                                    </li>
+                                    <li>
+                                        <a href="">brown</a>
+                                    </li>
+                                    <li>
+                                        <a href="">euro</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Blog body area End-->
+

@@ -1,0 +1,435 @@
+﻿@inject IlayoutService layoutService
+@inject UserManager<AppUser> userManager
+@{
+    Dictionary<string, string> settings = await layoutService.GetSettingsAsync();
+    List<Category> categories = await layoutService.GetCategoriesAsync();
+    List<BasketVMs> basketVMs =await layoutService.GetBasketsAsync();
+    List<WishVM> wishVMs = await layoutService.GetWishListAsync();
+
+    AppUser appUser = null;
+
+    if(User.Identity.IsAuthenticated && User.IsInRole("Member"))
+    {
+        appUser = await userManager.FindByNameAsync(User.Identity.Name);
+    }
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antomi</title>
+</head>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" href="~/Assets/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+<link rel="stylesheet" href="~/Assets/css/detail.css">
+<link rel="stylesheet" href="~/Assets/css/reset.css">
+<link rel="stylesheet" href="~/Assets/css/style.css">
+<link rel="stylesheet" href="~/Assets/css/Custome.css">
+
+
+<!-- Tippy.js CSS dosyası -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tippy.js@6.3.1/dist/tippy.css">
+
+<!-- Font Awesome CSS dosyası -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Slick Slider CSS dosyaları -->
+<!--
+    <link rel="stylesheet" type="text/css" href="glider.css"> -->
+
+
+<body>
+    @if (TempData["warning"] != null)
+    {
+        <input type="hidden" value="@TempData["warning"].ToString()" id="warningToaster"/>
+    }
+    @if (TempData["success"] != null)
+    {
+        <input type="hidden" value="@TempData["success"].ToString()" id="successToaster" />
+    }
+    <!-- Header part Start -->
+    <header>
+        <nav>
+            <div class="containerr">
+                <div class="navclass d-flex justify-content-between align-items-center">
+                    <div class="navclass1">
+                        <p>@settings.FirstOrDefault(s=>s.Key=="Offer").Value</p>
+                    </div>
+                    <div class="navclass2">
+                        <ul>
+                            <li>Store Locations</li>
+                            <li>Track Your Order</li>
+                            <li>Hotline: <a href="@(@settings.FirstOrDefault(s=>s.Key=="Hootline2").Value)">@settings.FirstOrDefault(s=>s.Key=="Hootline2").Value</a></li>
+                            <li>Quality Guarantee Of Products</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <nav>
+            <div class="containerrs">
+                <div class="header-menu-nav d-flex justify-content-between align-items-center">
+                    <div>
+                        <a asp-controller="Home" asp-action="Index"><img src="~/Assets/Photos/Logo/@settings.FirstOrDefault(s=>s.Key=="Logo").Value" alt=""></a>
+                    </div>
+                    <div class="navul">
+                        <ul class="d-flex justify-content-between align-items-center">
+                            <li class="@((ViewContext.RouteData.Values["Controller"] as string == "Home" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")"><a asp-controller="Home" asp-action="Index">HOME</a></li>
+                            <li class="@((ViewContext.RouteData.Values["Controller"] as string == "Product" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")"><a asp-controller="Product" asp-action="Index">SHOP</a></li>
+                            <li class="@((ViewContext.RouteData.Values["Controller"] as string == "Blog" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")"><a asp-controller="Blog" asp-action="Index">BLOG</a></li>
+                            <li class="@((ViewContext.RouteData.Values["Controller"] as string == "About" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")"><a asp-controller="About" asp-action="Index">ABOUT US</a></li>
+                            <li class="@((ViewContext.RouteData.Values["Controller"] as string == "Contact" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")"><a asp-controller="Contact" asp-action="Index">CONTACT US</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="register">
+                        <a href="" class="reg">
+                            <span>Log in</span>
+                            <i class="fa-solid fa-user-tie fa-2xl"></i>
+                            @if (appUser != null)
+                            {
+                                <ul>
+                                    <li><a asp-controller="Account" asp-action="MyAccount">@appUser.UserName</a></li>
+                                    <li><a asp-controller="Account" asp-action="Register">Check Out</a></li>
+                                    <li><a asp-controller="Account" asp-action="LogOut">Sign Out</a></li>
+                                </ul>
+                            }else{
+                                <ul>
+                                    <li><a asp-controller="Account" asp-action="Login">Sign In</a></li>
+                                    <li><a asp-controller="Account" asp-action="Register">Sign Up</a></li>
+                                </ul>
+                            }
+                        </a>
+                    </div>
+                    <div class="nava d-flex justify-content-between align-items-center">
+                        <a asp-controller="Wish" asp-action="Index">
+                            <i class="fa-regular fa-heart"></i>
+                          
+                                <span>@wishVMs.Count()</span>
+                        </a>
+                        <a id="open" href="">
+                            <i class="fa fa-shopping-bag"></i>
+                            <span>
+                                @basketVMs.Count()
+                            </span>
+                        </a>
+                        <span>$152.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini_cart active">
+                @await Html.PartialAsync("_BasketPArtial",basketVMs)
+            </div>
+
+        </nav>
+    </header>
+    <!--Header Part End-->
+    <!--Search Part Start-->
+    <section>
+        <div class="containerr">
+            <div class="search-common align-items-center justify-content-between d-flex">
+                <div>
+                    <div class="categories-menu">
+                        <div class="categories-title">
+                            <h2>MAİN CATEGORIES</h2>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="categori_toggle ">
+                            <ul class="list-group">
+                                @foreach (Category main in categories)
+                                {
+                                    <li>@main.Name</li>
+                                }
+                                <li class="leadmor">
+                                    <i class="fa-solid fa-plus"></i>
+                                    More Categories
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nice-select align-items-center justify-content-between d-flex">
+                    
+                    <div class="select-option">
+                        <span>All Categories</span>
+                        <i class="fa-solid fa-angle-up fa-rotate-180"></i>
+
+                        <ul class="list-group d-none" id="categoryID">
+                            <li class="list-group-item list-group-item-action active">All Categories</li>
+                            @foreach (Category main1 in categories)
+                            {
+                            <li class="list-group-item list-group-item-action" id="@main1.Id">@main1.Name</li>
+
+                                    @if (main1.Children != null && main1.Children.Count() > 0)
+                                    {
+                                        @foreach (Category child in main1.Children)
+                                        {
+                                         <li class="list-group-item list-group-item-action" id="@child.Id">- - - - @child.Name</li>
+                                        }
+                                    }
+                            }
+                           
+                        </ul>
+                    </div>
+                    <input id="searchInput" type="text" placeholder="Search Produt ...">
+                    <button id="searchBtn">SEARCH</button>
+                    </div>
+                    <br />
+                    <div style="
+                                   position: absolute;
+                                        width: 53%;
+                                       /* background: white;*/
+                                        left: 360px;
+                                        z-index: 99999;
+                                        top: 233px;
+                                        border-radius: 10px;
+                                        
+                                        height:auto;
+                                       
+                        ">
+                    <ul id="searchBody" style="width: 97%;margin-left: 6px;background-color: white;">
+
+                    </ul>
+                    </div>
+                <div class="bigsales">
+                    <a href="">BIG SALE BLACK FRIDAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Search PArt End-->
+        @RenderBody()
+    <!--Footer Area Start-->
+    <footer class="footer_widgets">
+        <!--newsletter area start-->
+        <div class="newsletter_area">
+            <div class="containerr">
+                <div class="newsletter_inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-5">
+                            <div class="newsletter_sing_up">
+                                <h3>Newsletter Sign Up</h3>
+                                <p>
+                                    (Get
+                                    <span>30% OFF</span>
+                                    coupon today subscibers)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5">
+                            <div class="subscribe_content">
+                                <p>
+                                    <strong>Join 226.000+ subscribers</strong>
+                                    and get a new discount coupon on every Monday.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5">
+                            <div class="subscribe_form">
+                                <form class="mc-form footer-newsletter" novalidate="true">
+                                    <input type="email" autocomplete="off" placeholder="Your email address...">
+                                    <button>Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--newsletter area start-->
+        <!--Footer top start-->
+        <div class="footer_top">
+            <div class="containerr">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-sm-7">
+                        <div class="widgets_container contact_us">
+                            <h3>GET THE APP</h3>
+                            <div class="aff_content">
+                                <p>
+                                    <strong>ANTOMI</strong>
+                                    App is now available on Google Play &amp; App Store. Get it now.
+                                </p>
+                            </div>
+                            <div class="app_img">
+                                <figure class="app_img">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Fouterimages/icon-appstore.webp" alt="">
+                                    </a>
+                                </figure>
+                                <figure class="app_img">
+                                    <a href="">
+                                        <img src="~/Assets/Photos/Fouterimages/icon-googleplay.webp" alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-5">
+                        <div class="widgets_container widget_menu">
+                            <h3>Information</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li>
+                                        <a href="">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Delivery Information</a>
+                                    </li>
+                                    <li>
+                                        <a href="">New products</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Best sales</a>
+                                    </li>
+                                    <li>
+                                        <a href="">My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Order History</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>My Account</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li>
+                                        <a href="">My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Shopping Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Wish List</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Prices drop</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Order History</a>
+                                    </li>
+                                    <li>
+                                        <a href="">International Orders</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-5 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Customer Service</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li>
+                                        <a href="">Sitemap</a>
+                                    </li>
+                                    <li>
+                                        <a href="">My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Delivery Information</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Order History</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Wish List</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Specials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-7 col-sm-12">
+                        <div class="widgets_container">
+                            <h3 class="finsh">CONTACT INFO</h3>
+                            <div class="footer_contact">
+                                <div class="footer_contact_inner d-flex">
+                                    <div class="contact_icone">
+                                        <img src="~/Assets/Photos/Fouterimages/icon-phone.webp" alt="">
+                                    </div>
+                                    <div class="contact_text">
+                                        <p>
+                                            Hotline Free 24/24:
+                                            <br>
+                                            <strong>@settings.FirstOrDefault(s=>s.Key=="Hootline2").Value</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                    
+                                    Your address goes here.
+                                    <br>
+                                    @settings.FirstOrDefault(s=>s.Key=="Mail").Value
+                                </p>
+                            </div>
+                            <div class="footer_social">
+                                <ul>
+                                    <li>
+                                        <a class="facebook" href="">
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="instagram" href="">
+                                            <i class="fa-brands fa-square-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="linkedin" href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="blnm" href="">
+                                            <i class="fa fa-rss"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer top start-->
+    </footer>
+    <!--Footer area end-->
+    <!-- <script src="glider.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+   @* <script src="glider.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="~/Assets/Js/app.js"></script>
+    <script src="~/Assets/Js/shop.js"></script>
+    <script src="~/Assets/Js/about.js"></script>
+    <script src="~/Assets/Js/account.js"></script>
+    <script src="~/Assets/Js/check.js"></script>
+    <script src="~/Assets/Js/detail.js"></script>
+
+    <script src="~/Assets/Js/custome.js" asp-append-version="true"></script>
+
+</body>
+</html>

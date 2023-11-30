@@ -1,0 +1,81 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "Detail";
+    int no = 0;
+}
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="
+                                                                        position: absolute;
+                                                                        right: 72px;
+                                                                        top: 6rem;
+                                                                    ">
+    <h3>Order Detail</h3>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="card" style="width: 18rem;margin-left: 140px;margin-top: 12rem;margin-bottom:-65px">
+            <div class="card-body">
+                <h5 class="card-title">Order NO:@Model.No</h5>
+                <h5 class="card-title">Order User:@Model.User?.Name @Model.User?.Surname</h5>
+                <h5 class="card-title">Order Title:@Model.Name</h5>
+                <h5 class="card-title">Order Email:@Model.Email</h5>
+                <h5 class="card-title">Company:@Model.CompanyName</h5>
+                <h5 class="card-title">Order State:@Model.State</h5>
+                <h5 class="card-title">Order Town:@Model.Town</h5>
+                <h5 class="card-title">Order Street:@Model.Street</h5>
+                <h5 class="card-title">Order Street2:@Model.Street2</h5>
+                <h5 class="card-title">Postal Code:@Model.PostalCode</h5>
+                <h5 class="card-title">Order Note:@Model.OrderNotes</h5>
+            </div>
+        </div>
+        @if (Model.OrderProducts != null && Model.OrderProducts.Count() > 0)
+        {
+            <table class="table table-striped table-dark" style="
+    margin-left: 138px;
+    margin-top: 8rem;
+">
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Extag</th>
+                        <th scope="col">Count</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Created Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (OrderProduct orderProduct in Model.OrderProducts)
+                    {
+                        no++;
+                        <tr>
+                            <th scope="row">@no</th>
+                            <td>@orderProduct.Title</td>
+                            <td>@orderProduct.Price</td>
+                            <td>@orderProduct.ExTag</td>
+                            <td>@orderProduct.Count</td>
+                            <td>@(orderProduct.Count*(orderProduct.Price+orderProduct.ExTag))</td>
+                            <td>Date:@orderProduct.CreatedAt.ToString("yyyy/MM/dd")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        <div class="col-lg-12">
+            @await Html.PartialAsync("_StatusPartial",new CodeFinallyProjeAntomi.Areas.Manage.ViewModels.OrderVms.OrderVm{Id=Model.Id,UserId=Model.UserId,Comment=Model.Comment,Status=Model.Status})
+        </div>
+        <div style="margin-left: 137px;">
+            <a asp-area="manage" asp-controller="Order" asp-action="Index" class="btn btn-primary" style="
+                                                                                                    width: 111%;
+                                                                                                    margin-left: 7px;
+                                                                                                    margin-top: 18px;
+                                                                                                ">Go Back</a>
+        </div>
+    </div>
+</div>
+
+

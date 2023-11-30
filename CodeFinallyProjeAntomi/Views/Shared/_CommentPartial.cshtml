@@ -1,0 +1,26 @@
+﻿@model CodeFinallyProjeAntomi.Models.Comment
+
+<form method="post" asp-controller="Blog" asp-action="AddComment" >
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="CommentText">Comment </label>
+            <textarea asp-for="CommentText"></textarea>
+        </div>
+        @*    <div class="col-lg-4 col-md-4">
+        <label for="author">Name</label>
+        <br>
+        <input id="author" type="text">
+        </div>
+        <div class="col-lg-4 col-md-4">
+        <label for="author">Email</label>
+        <br>
+        <input id="author" type="text">
+        </div>
+        <div class="col-lg-4 col-md-4">
+        <label for="author">Website</label>
+        <br>
+        <input id="author" type="text">
+        </div>*@
+    </div>
+    <button class="button" type="submit">Post Comment</button>
+</form>

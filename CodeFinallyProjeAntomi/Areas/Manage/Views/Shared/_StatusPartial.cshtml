@@ -1,0 +1,18 @@
+﻿@model OrderVm
+<form method="post" asp-area="manage" asp-controller="order" asp-action="Update">
+    <input asp-for="Id" type="hidden"/>
+    <input asp-for="UserId" type="hidden"/>
+    <div class="form-group" style="margin-left: 7rem;">
+        <label asp-for="Comment" style="margin-left:20px">Comment</label>
+        <input asp-for="Comment" class="form-control" placeholder="Enter Comment">
+        <span asp-validation-for="Comment" class="text-danger"></span>
+    </div>
+    <div class="form-group" style="margin-left: 7rem;">
+        <label asp-for="Status"></label>
+        <select asp-for="Status" class="form-control" asp-items="@Html.GetEnumSelectList<Status>()">
+            <option value="">Select Status</option>
+        </select>
+        <span asp-validation-for="Comment" class="text-danger"></span>
+    </div>
+    <button style="margin-left: 8rem;width: 100%;" type="submit" class="btn btn-success">Submit</button>
+</form>

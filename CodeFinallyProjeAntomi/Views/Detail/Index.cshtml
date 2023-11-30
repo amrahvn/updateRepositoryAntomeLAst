@@ -1,0 +1,139 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--Bread-crubs area Part Start-->
+<div class="breadcrumbs_area">
+    <div class="containerr">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <ul>
+                        <li>
+                            <a href="İndex.html">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-chevron-down fa-rotate-270"></i></li>
+                        <li>Details</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Bread-crubs area Part Start-->
+<!--Detail Area Start-->
+<div class="checkout_page_bg">
+    <div class="containerr">
+        <div class="card-wrapper">
+            <div class="card">
+                <!-- card left -->
+             
+                <div class="product-imgs">
+                    <div class="img-display">
+                        <div class="img-showcase">
+                            <img src="~/Assets/Photos/Product/ProductImages/20231111162539991.jpg" alt="shoe image">
+                            <img src="~/Assets/Photos/Product/ProductImages/20231111203058066.jpg" alt="shoe image">
+                            <img src="~/Assets/Photos/Product/ProductImages/20231111203058067.jpg" alt="shoe image">
+                            <img src="~/Assets/Photos/Product/ProductImages/20231111203058068.jpg" alt="shoe image">
+                        </div>
+                    </div>
+                    <div class="img-select">
+                            <div class="img-item">
+                                <a href="#" data-id="1">
+                                <img src="~/Assets/Photos/Product/ProductImages/20231111162539991.jpg" alt="shoe image">
+                                </a>
+                            </div>
+                        <div class="img-item">
+                            <a href="#" data-id="2">
+                                <img src="~/Assets/Photos/Product/ProductImages/20231111203058066.jpg" alt="shoe image">
+                            </a>
+                        </div>
+                        <div class="img-item">
+                            <a href="#" data-id="3">
+                                <img src="~/Assets/Photos/Product/ProductImages/20231111203058067.jpg" alt="shoe image">
+                            </a>
+                        </div>
+                        <div class="img-item">
+                            <a href="#" data-id="4">
+                                <img src="~/Assets/Photos/Product/ProductImages/20231111203058068.jpg" alt="shoe image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- card right -->
+                <div class="product-content">
+                    <h2 class="product-title">@Model.Title</h2>
+                    <a href="#" class="product-link">visit Antomi store</a>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.7(21)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <p class="last-price">Old Price: <span>$@Model.Price</span></p>
+                        <p class="new-price">New Price: <span>$@(Model.Price-Model.DisCountPrice)</span></p>
+                    </div>
+
+                    <div class="product-detail">
+                        <h2>about this item: </h2>
+                        <p>@Model.SmallDescription</p>
+                        <ul>
+                            <li>Color: <span>Black</span></li>
+                            @if (Model.Count > 0)
+                            {
+                                <li>Available: <span>
+                                        in stock
+                                    </span></li>
+                            }
+                            @if(Model.Count<=0){
+                                <li>
+                                    Available: <span>
+                                        There is no stock
+                                    </span>
+                                </li>
+                            }
+                            <li>Category: <span>@Model.Category.Name</span></li>
+                            <li>Shipping Area: <span>All over the world</span></li>
+                            <li>Shipping Fee: <span>Free</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="purchase-info">
+                        <input type="number" min="0" value="1">
+                        <a asp-controller="Basket" asp-action="AddBasket" asp-route-id="@Model.Id" type="button" class="btn">
+                            Add to Cart <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <button type="button" class="btn">Compare</button>
+                    </div>
+
+                    <div class="social-links">
+                        <p>Share At: </p>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Detail Area End-->
+

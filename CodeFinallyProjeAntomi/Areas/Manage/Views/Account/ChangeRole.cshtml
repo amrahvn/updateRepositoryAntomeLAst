@@ -1,0 +1,54 @@
+﻿@model CodeFinallyProjeAntomi.Areas.Manage.ViewModels.AccountVMs.RoleVM
+@{
+    ViewData["Title"] = "ChangeRole";
+}
+
+
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="
+                                                                        position: absolute;
+                                                                        right: 72px;
+                                                                        top: 6rem;
+                                                                    ">
+    <h3>User Profile</h3>
+</div>
+
+<div class="row align-items-center">
+    <div class="container">
+        <div class="createform" style="
+                                        margin-left: 170px;
+                                        margin-top: 14rem;
+                                        background-color: white;
+                                        border-radius: 12px;
+                                        margin-bottom: 10rem;
+                                    ">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger">
+            </div>
+            <form method="post">
+                <div class="form-group">
+                    <label asp-for="Roles"></label>
+                    <select asp-for="Roles" class="form-control" >
+                        <option value="">Select Roles</option>
+                        @foreach (string roleVM in Model.Roles)
+                        {
+                            <option value="">@roleVM</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Roles" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary " style="margin-left:12px;margin-bottom:12px;width:140px">Submit</button>
+                <br />
+
+                <a asp-area="manage" asp-controller="Dashboard" asp-action="Index" class="btn btn-primary" style="
+                                                                                                                margin-left: 11px;
+                                                                                                                width: 145px;
+                                                                                                                margin-bottom: 6px;
+                                                                                                            ">Go Back</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

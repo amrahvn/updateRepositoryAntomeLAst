@@ -140,7 +140,7 @@ namespace CodeFinallyProjeAntomi.Areas.Manage.Controllers
                     return View(product);
                 }
 
-                if ((file.Length / 1024) > 400)
+                if ((file.Length / 1024) > 90000)
                 {
                     ModelState.AddModelError("Files", "File must be 400kb");
                     return View(product);

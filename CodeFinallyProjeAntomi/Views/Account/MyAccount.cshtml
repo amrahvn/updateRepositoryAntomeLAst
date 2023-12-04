@@ -158,7 +158,7 @@
                                             <h3>Account details </h3>
                                             <div class="login">
                                                 <div class="login_form_container">
-                                                   <div class="account_login_form  @*@(addressErrorr ? "":"d-none")*@">
+                                                   <div class="account_login_form  @(addressErrorr ? "":"d-none")">
                                                        @await Html.PartialAsync("_AddAdresssPArtial",Model.Address)
                                                     </div>
                                                 </div>

@@ -161,13 +161,18 @@ namespace CodeFinallyProjeAntomi.Areas.Manage.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ChangeRole()
+        public async Task<IActionResult> ChangeRole(string? id)
         {
-            AppUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
+            if(id == null) { return BadRequest(); } 
 
+            AppUser appUser = await _userManager.FindByIdAsync(id);
+
+            List<string> roles = await _roleManager.Roles.Select(x=>x.Name).ToListAsync();
+            IList<string> rolesName = await _userManager.GetRolesAsync(appUser);
             RoleVM roleVM = new RoleVM
             {
-                Roles = appUser.Roles,
+                Roles = roles,
+                Role = rolesName.FirstOrDefault()
             };
 
             return View(roleVM);
@@ -175,11 +180,15 @@ namespace CodeFinallyProjeAntomi.Areas.Manage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ChangeRole(RoleVM roleVM)
+        public async Task<IActionResult> ChangeRole(string id, RoleVM roleVM)
         {
-            AppUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
+            if (id == null) { return BadRequest(); }
 
-            appUser.Roles = roleVM.Roles;
+            AppUser appUser = await _userManager.FindByIdAsync(id);
+
+            if (appUser == null) { return BadRequest(); }
+
+            await _userManager.AddToRoleAsync(appUser, roleVM.Role);
 
             IdentityResult identityResult = await _userManager.UpdateAsync(appUser);
 
@@ -196,8 +205,6 @@ namespace CodeFinallyProjeAntomi.Areas.Manage.Controllers
 
             return RedirectToAction("Index", "Dashboard");
         }
-
-
 
         public async Task<IActionResult> SignOut()
         {

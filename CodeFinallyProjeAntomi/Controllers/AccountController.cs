@@ -336,11 +336,13 @@ namespace CodeFinallyProjeAntomi.Controllers
 
             AppUser appUser = await _userManager.Users
             .Include(u => u.Address.Where(a => a.IsDeleted == false))
+            .Include(u => u.Order.Where(a => a.IsDeleted == false)).ThenInclude(o=>o.OrderProducts)
             .FirstOrDefaultAsync(u => u.UserName == User.Identity.Name);
 
             MyAccountVM myAccountVM=new MyAccountVM();
             myAccountVM.Addresses = appUser.Address;
             myAccountVM.profileAccountVM = profileAccountVM;
+            myAccountVM.Orders = appUser.Order;
 
             //if(!ModelState.IsValid)
             //{
@@ -374,6 +376,7 @@ namespace CodeFinallyProjeAntomi.Controllers
             }
 
             await _signInManager.SignInAsync(appUser, isPersistent: true);
+
 
             return View("MyAccount", myAccountVM);
         }

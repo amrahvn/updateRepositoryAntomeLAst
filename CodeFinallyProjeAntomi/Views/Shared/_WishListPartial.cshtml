@@ -1,8 +1,7 @@
 ﻿@model IList<WishVM>
 
 
-@if (ViewData["WishList"] != null && ((List<WishVM>)ViewData["WishList"]).Any())
-{
+
 <form action="#" >
     <div class="row">
         <div class="col-12">
@@ -57,8 +56,3 @@
         </div>
     </div>
 </form>
-}
-else
-{
-    <div class="d-none">Form is hidden because there are no products in the WishList</div>
-}

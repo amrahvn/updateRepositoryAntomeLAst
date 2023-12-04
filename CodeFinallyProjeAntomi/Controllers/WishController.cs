@@ -48,7 +48,7 @@ namespace CodeFinallyProjeAntomi.Controllers
             }
 
             ViewData["WishList"] = wishVMs;
-            TempData["WishList"] = wishVMs;
+            //TempData["WishList"] = wishVMs;
 
             return View();
         }

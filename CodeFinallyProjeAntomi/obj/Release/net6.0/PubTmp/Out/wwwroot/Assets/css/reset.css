@@ -1,0 +1,32 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ button,input,textarea,select{
+    outline: none;
+} 
+
+.containerr{
+    padding: 0 80px;
+}
+.containerrs{
+    padding: 0 80px;
+    z-index: 9999999;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+} 
+a:hover{
+    cursor: pointer;
+}
+
+    li:hover{
+        cursor: pointer;
+    } 

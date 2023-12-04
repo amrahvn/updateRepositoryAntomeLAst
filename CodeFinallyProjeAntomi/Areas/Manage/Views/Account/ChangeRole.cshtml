@@ -27,12 +27,12 @@
             </div>
             <form method="post">
                 <div class="form-group">
-                    <label asp-for="Roles"></label>
-                    <select asp-for="Roles" class="form-control" >
+                    <label asp-for="Role"></label>
+                    <select asp-for="Role" class="form-control" >
                         <option value="">Select Roles</option>
                         @foreach (string roleVM in Model.Roles)
                         {
-                            <option value="">@roleVM</option>
+                            <option value="@roleVM">@roleVM</option>
                         }
                     </select>
                     <span asp-validation-for="Roles" class="text-danger"></span>
